@@ -1,5 +1,7 @@
 package il.qa.openweathermap.appmanager;
 
+import il.qa.openweathermap.helpers.HttpSession;
+
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;

@@ -1,7 +1,8 @@
-package il.qa.openweathermap.appmanager;
+package il.qa.openweathermap.helpers;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
+import il.qa.openweathermap.appmanager.ApplicationManager;
 import il.qa.openweathermap.dataModel.CityData;
 import org.apache.http.client.fluent.Request;
 
