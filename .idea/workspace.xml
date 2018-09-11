@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca6991ac-80da-496b-95fc-a181ca9a33b3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/il/qa/openweathermap/helpers/JsonExtractorHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/il/qa/openweathermap/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/il/qa/openweathermap/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/il/qa/openweathermap/helpers/HttpSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/il/qa/openweathermap/helpers/HttpSession.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/il/qa/openweathermap/tests/FindLongestAndShortestDayLightCity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/il/qa/openweathermap/tests/FindLongestAndShortestDayLightCity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/il/qa/openweathermap/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/il/qa/openweathermap/appmanager/ApplicationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/il/qa/openweathermap/appmanager/HttpSession.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/il/qa/openweathermap/tests/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/il/qa/openweathermap/tests/FindLongestAndShortestDayLightCity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/il/qa/openweathermap/tests/FindLongestAndShortestDayLightCity.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -76,8 +71,8 @@
       <file leaf-file-name="FindLongestAndShortestDayLightCity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/il/qa/openweathermap/tests/FindLongestAndShortestDayLightCity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="23" column="67" lean-forward="true" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+            <state relative-caret-position="168">
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -395,9 +390,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FindLongestAndShortestDayLightCity - 2018.09.11 at 11h 44m 48s.xml">
-      <configuration name="FindLongestAndShortestDayLightCity" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="FindLongestAndShortestDayLightCity - 2018.09.11 at 11h 45m 56s.xml">
       <configuration name="FindLongestAndShortestDayLightCity" configurationId="TestNG" />
     </history-entry>
@@ -425,6 +417,9 @@
     <history-entry file="FindLongestAndShortestDayLightCity - 2018.09.11 at 11h 11m 25s.xml">
       <configuration name="FindLongestAndShortestDayLightCity" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="FindLongestAndShortestDayLightCity - 2018.09.11 at 11h 48m 00s.xml">
+      <configuration name="FindLongestAndShortestDayLightCity" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -445,14 +440,14 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5042965" side_tool="true" weight="0.3290398" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5048335" side_tool="true" weight="0.32788798" />
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.32975295" />
-      <window_info active="true" anchor="bottom" x="29" y="375" width="1862" height="281" id="Run" order="2" sideWeight="0.49570355" visible="true" weight="0.32788798" />
+      <window_info active="true" anchor="bottom" x="29" y="375" width="1862" height="281" id="Run" order="2" sideWeight="0.49516648" visible="true" weight="0.32788798" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49570355" weight="0.3290398" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2019334" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2019334" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32905483" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -736,8 +731,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/il/qa/openweathermap/tests/FindLongestAndShortestDayLightCity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="23" column="67" lean-forward="true" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+        <state relative-caret-position="168">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

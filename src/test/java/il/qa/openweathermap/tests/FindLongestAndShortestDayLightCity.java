@@ -12,7 +12,7 @@ public class FindLongestAndShortestDayLightCity extends  TestBase {
 
 
   @Test
-  public void getParameteresFromCity() throws IOException {
+  public void findLongestandShortestDaulight() throws IOException {
 
     //----------Pull elements from site to collection cityData----------------//
     List<CityData> cityData = app.newSession().getCitiesList();
