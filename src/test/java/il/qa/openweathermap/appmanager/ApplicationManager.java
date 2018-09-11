@@ -1,6 +1,7 @@
 package il.qa.openweathermap.appmanager;
 
 import il.qa.openweathermap.helpers.HttpSession;
+import il.qa.openweathermap.helpers.JsonExtractorHelper;
 
 import java.io.File;
 import java.io.FileReader;
@@ -10,11 +11,15 @@ import java.util.Properties;
 public class ApplicationManager {
   private final Properties webProperties = new Properties();
   private final Properties citiesList = new Properties();
+  private JsonExtractorHelper jsonExtractorHelper = new JsonExtractorHelper();
+
 
 
   public void init() throws IOException{
     webProperties.load(new FileReader(new File(String.format("src\\test\\resources\\web.Properties"))));
     citiesList.load(new FileReader(new File(String.format("src\\test\\resources\\cities.properties"))));
+
+
 }
 
   public void stop(){
@@ -31,5 +36,9 @@ public class ApplicationManager {
 
   public String getWebProperty(String key) {
     return webProperties.getProperty(key);
+  }
+
+  public JsonExtractorHelper jsonElements() {
+    return jsonExtractorHelper;
   }
 }

@@ -15,11 +15,11 @@ public class FindLongestAndShortestDayLightCity extends  TestBase {
   public void getParameteresFromCity() throws IOException {
 
     //----------Pull elements from site to collection cityData----------------//
-    List<CityData> cityData = app.newSession().getData();
+    List<CityData> cityData = app.newSession().getCitiesList();
 
     //Finds in cityData collection maximum and minimum daylight values
-    String cityNameOfLongestDaylight=cityData.stream().max((o1, o2) -> Integer.compare(o1.getDaylight(),o2.getDaylight())).get().getCityName();
-    String cityNameOfShortestDaylight=cityData.stream().min((o1, o2) -> Integer.compare(o1.getDaylight(),o2.getDaylight())).get().getCityName();
+    String cityNameOfLongestDaylight=cityData.stream().max(Comparator.comparingInt(CityData::getDaylight)).get().getCityName();
+    String cityNameOfShortestDaylight=cityData.stream().min(Comparator.comparingInt(CityData::getDaylight)).get().getCityName();
 
     //Returns two objects that including maximum and minimum values
     List<CityData> longestDaylight=cityData.stream().filter(o -> cityNameOfLongestDaylight.equals(o.getCityName())).collect(Collectors.toList());

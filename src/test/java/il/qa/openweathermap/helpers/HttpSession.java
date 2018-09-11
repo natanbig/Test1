@@ -15,28 +15,25 @@ public class HttpSession {
 
   public HttpSession(ApplicationManager app){
     this.app=app;
+
   }
 
-  public List<CityData> getData() throws IOException {
-    String json;
-    List<CityData> cityDataSet = new ArrayList<>();
+  public List<CityData> getCitiesList() throws IOException {
+    List<CityData> citiDataList = new ArrayList<>();
     for(int i =1;i<11;i++) {
-      json = Request.Get(app.getWebProperty("web.baseUrl") + URLEncoder.encode(app.getCitiesList((String.format("city.%s", i)))) + "&APPID=" + app.getWebProperty("web.apiKey.currentWheather"))
+      String json = Request.Get(app.getWebProperty("web.baseUrl") + URLEncoder.encode(app.getCitiesList((String.format("city.%s", i)))) + "&APPID=" + app.getWebProperty("web.apiKey.currentWheather"))
               .execute().returnContent().asString();
-      JsonElement parsedJson = new JsonParser().parse(json);
 
-      JsonElement cityName=parsedJson.getAsJsonObject().get("name");
-      JsonElement sunriseTimeUNX=parsedJson.getAsJsonObject().get("sys").getAsJsonObject().get("sunrise");
-      JsonElement sunsetTimeUNX=parsedJson.getAsJsonObject().get("sys").getAsJsonObject().get("sunset");
-      JsonElement temperatureKelvin=parsedJson.getAsJsonObject().get("main").getAsJsonObject().get("temp");
-       cityDataSet.add(new CityData(
-              cityName.toString(),
-              Integer.parseInt(sunriseTimeUNX.toString()),
-              Integer.parseInt(sunsetTimeUNX.toString()),
-              Float.parseFloat(temperatureKelvin.toString())));
+       app.jsonElements().extractRequiredDataFromCityJson(json);
+       citiDataList.add(new CityData(
+                              app.jsonElements().getCityName(),
+                              app.jsonElements().getSunriseTimeUNX(),
+                              app.jsonElements().getSunsetTimeUNX(),
+                              app.jsonElements().getTemperatureKelvin()
+       ));
 
     }
-    return cityDataSet;
+    return citiDataList;
   }
 
 }
