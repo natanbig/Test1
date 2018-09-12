@@ -17,7 +17,7 @@ public class ApplicationManager {
 
   public void init() throws IOException{
     ClassLoader classLoader=getClass().getClassLoader();
-    webProperties.load(new FileReader(new File(classLoader.getResource("web.Properties").getFile())));
+    webProperties.load(new FileReader(new File(classLoader.getResource("web.properties").getFile())));
     citiesList.load(new FileReader(new File(classLoader.getResource("cities.properties").getFile())));
 
 
