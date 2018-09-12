@@ -29,6 +29,5 @@ public class FindLongestAndShortestDayLightCity extends  TestBase {
     System.out.println("The longest daylight in " +longestDaylight.get(0).getCityName()+ " with temperature " + longestDaylight.get(0).getTemperatureKelvin()+"\n");
     System.out.println("The longest daylight in " +shortestDaylight.get(0).getCityName()+ " with temperature " + shortestDaylight.get(0).getTemperatureKelvin()+"\n");
 
-
   }
 }
