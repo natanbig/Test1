@@ -6,6 +6,7 @@ import il.qa.openweathermap.helpers.JsonExtractorHelper;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URLDecoder;
 import java.util.Properties;
 
 public class ApplicationManager {
@@ -17,8 +18,8 @@ public class ApplicationManager {
 
   public void init() throws IOException{
     ClassLoader classLoader=getClass().getClassLoader();
-    webProperties.load(new FileReader(new File(classLoader.getResource("web.properties").getFile())));
-    citiesList.load(new FileReader(new File(classLoader.getResource("cities.properties").getFile())));
+    webProperties.load(new FileReader(new File(URLDecoder.decode(classLoader.getResource("web.properties").getFile()))));
+    citiesList.load(new FileReader(new File(URLDecoder.decode(classLoader.getResource("cities.properties").getFile()))));
 
 
 }
